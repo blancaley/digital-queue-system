@@ -1,8 +1,18 @@
 let queue = [];
 const personName = document.querySelector("#name");
-let list = document.querySelector("#list");
+const list = document.querySelector("#list");
+let feedback = document.createElement("p");
+
+showQueue();
 
 function showQueue() {
+    if (queue.length === 0) {
+        feedback.innerText = "There’s currently no people standing in line.";
+        personName.insertAdjacentElement("afterend", feedback);
+    } else {
+        feedback.remove();
+    }
+    
     //Clear displayed list
     while(list.lastElementChild) {
         list.removeChild(list.lastElementChild);
