@@ -23,3 +23,12 @@ function add() {
     queue.push(newPerson);
     showQueue();
 }
+
+function fastTrack() {
+    let newPerson = {
+        queueNum: queue.length + 1,
+        personName: personName.value
+    }
+    queue.unshift(newPerson);
+    showQueue();
+}
