@@ -32,3 +32,8 @@ function fastTrack() {
     queue.unshift(newPerson);
     showQueue();
 }
+
+function checkIn() {
+    queue.shift();
+    showQueue();
+}
