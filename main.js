@@ -3,6 +3,11 @@ const personName = document.querySelector("#name");
 let list = document.querySelector("#list");
 
 function showQueue() {
+    //Clear displayed list
+    while(list.lastElementChild) {
+        list.removeChild(list.lastElementChild);
+    }
+
     queue.forEach(element => {
         let personInList = document.createElement("li");
         personInList.innerText = element.personName;
