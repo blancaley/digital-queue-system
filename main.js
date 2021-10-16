@@ -26,12 +26,13 @@ function showQueue() {
 }
 
 function add() {
-    if (personName.value.trim() !== "") {
+    if (personName.value.trim !== "") {
         let newPerson = {
             queueNum: queue.length + 1,
             personName: personName.value
         } 
         queue.push(newPerson);
+        personName.value = "";
         showQueue();
     }
 }
