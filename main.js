@@ -27,25 +27,23 @@ function showQueue() {
 }
 
 function add() {
-    if (personName.value.trim() !== "") {
-        let newPerson = {
-            queueNum: queue.length + 1,
-            personName: personName.value
-        } 
-        queue.push(newPerson);
-        showQueue();
-    }
+    if (personName.value.trim() === "") return 
+    let newPerson = {
+        queueNum: queue.length + 1,
+        personName: personName.value
+    } 
+    queue.push(newPerson);
+    showQueue();
 }
 
 function fastTrack() {
-    if (personName.value.trim() !== "") {
-        let newPerson = {
-            queueNum: queue.length + 1,
-            personName: personName.value
-        }
+    if (personName.value.trim() === "") return 
+    let newPerson = {
+        queueNum: queue.length + 1,
+        personName: personName.value
+    }
     queue.unshift(newPerson);
     showQueue();
-    }
 }
 
 function checkIn() {
