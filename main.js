@@ -26,12 +26,14 @@ function showQueue() {
 }
 
 function add() {
-    let newPerson = {
-        queueNum: queue.length + 1,
-        personName: personName.value
+    if (personName.value.trim() !== "") {
+        let newPerson = {
+            queueNum: queue.length + 1,
+            personName: personName.value
+        } 
+        queue.push(newPerson);
+        showQueue();
     }
-    queue.push(newPerson);
-    showQueue();
 }
 
 function fastTrack() {

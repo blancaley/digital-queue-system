@@ -1,5 +1,6 @@
 Kravställning
 
+Version 1
 [x] När webbapplikationen laddas ska kön vara tom.
 [x] Det ska finnas en lista med samtliga personer i kön samt vilken plats i kön personen har.
 [x] Du ska kunna skriva in en persons namn, och med ett knapptryck placera kunden sist i kön.
