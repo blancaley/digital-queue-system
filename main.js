@@ -6,6 +6,7 @@ let feedback = document.createElement("p");
 showQueue();
 
 function showQueue() {
+    personName.value = "";
     if (queue.length === 0) {
         feedback.innerText = "There’s currently no people standing in line.";
         personName.insertAdjacentElement("afterend", feedback);
@@ -32,7 +33,6 @@ function add() {
             personName: personName.value
         } 
         queue.push(newPerson);
-        personName.value = "";
         showQueue();
     }
 }
@@ -44,7 +44,6 @@ function fastTrack() {
             personName: personName.value
         }
     queue.unshift(newPerson);
-    personName.value = "";
     showQueue();
     }
 }
