@@ -26,7 +26,7 @@ function showQueue() {
 }
 
 function add() {
-    if (personName.value.trim !== "") {
+    if (personName.value.trim() !== "") {
         let newPerson = {
             queueNum: queue.length + 1,
             personName: personName.value
@@ -38,12 +38,15 @@ function add() {
 }
 
 function fastTrack() {
-    let newPerson = {
-        queueNum: queue.length + 1,
-        personName: personName.value
-    }
+    if (personName.value.trim() !== "") {
+        let newPerson = {
+            queueNum: queue.length + 1,
+            personName: personName.value
+        }
     queue.unshift(newPerson);
+    personName.value = "";
     showQueue();
+    }
 }
 
 function checkIn() {
