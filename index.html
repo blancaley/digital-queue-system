@@ -11,17 +11,19 @@
     <div class="container">
         <div class="title">
             <img src="img/airline.png" alt="Airport Logo">
-            <h1 >Digitalt kösystem</h1>
+            <h1 >Virtual Queue System</h1>
         </div>
-        <input type="text" id="name" placeholder="Förnamn Efternamn"/>
+        <input type="text" id="name" placeholder="Firstname Lastname"/>
         <div class="buttonsContainer">
             <button id="add" type="button" onclick="add()">Queue</button>
             <button id="fastTrack" type="button" onclick="fastTrack()">Fast Track</button>
             <button id="checkIn" type="button" onclick="checkIn()">Check in</button>
         </div>
     </div>
-    <div class="container list-container">
-        <ol id="list"></ol>
+    <div class="container">
+        <div class="list-container">
+         <ol id="list"></ol>
+        </div>
     </div>
 
     <script src="main.js"></script>

@@ -9,7 +9,7 @@ function showQueue() {
     personName.value = "";
     if (queue.length === 0) {
         feedback.innerText = "There’s currently no people standing in line.";
-        personName.insertAdjacentElement("afterend", feedback);
+        list.insertAdjacentElement("afterend", feedback);
     } else {
         feedback.remove();
     }

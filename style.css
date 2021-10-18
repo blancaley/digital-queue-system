@@ -42,10 +42,6 @@ img {
     font-weight: 400;
 }
 
-p {
-    color: #6E6E6E;
-}
-
 .buttonsContainer > button {
     border: none;
     padding: 1rem 2rem;
@@ -84,13 +80,19 @@ p {
     box-shadow: 2px 3px 7px #9ba9bb;
 }
 
-#list {
-    width: 350px;
+.list-container {
+    width: 380px;
     margin-top: 2rem;
-    padding: 10px 30px;
+    padding-right: 30px;
     background-color: white;
     border: 1px solid #E6E8ED;
     border-radius: 9px;
+}
+
+p {
+    color: #999999;
+    padding-left: 30px;
+    font-style: italic;
 }
 
 li {
