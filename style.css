@@ -1,0 +1,58 @@
+body {
+    background-color: #F1F4FA;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+#name {
+    border-radius: 4px;
+    height: 1rem;
+    padding: 1rem 2rem;
+}
+
+p {
+    color: #6E6E6E;
+    font-family: arial;
+}
+
+.buttonsContainer > button {
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 25px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 900;
+    margin-top: 1rem;
+}
+
+#add {
+    background-color: #53bd38;
+}
+
+#add:hover {
+    background-color: #79c765;
+    box-shadow: 2px 3px 7px #9ba9bb;
+}
+
+#fastTrack {
+    background-color: #FBCC2C;
+}
+
+#fastTrack:hover {
+    background-color: #FCDB6B;
+    box-shadow: 2px 3px 7px #9ba9bb;
+}
+
+#checkIn {
+    color: #53bd38;
+    border: 0.1em solid #53bd38;
+}
+
+#checkIn:hover {
+    box-shadow: 2px 3px 7px #9ba9bb;
+}
