@@ -1,5 +1,6 @@
 body {
-    background-color: #F1F4FA;
+    background-color: #f5f7fa;
+    font-family: arial;
 }
 
 .container {
@@ -10,14 +11,24 @@ body {
 }
 
 #name {
-    border-radius: 4px;
+    border: 1px solid #E6E8ED;
+    border-radius: 9px;
     height: 1rem;
     padding: 1rem 2rem;
+    width: 350px;
+    color: #6E6E6E;
+    font-weight: 600;
+
+}
+
+#name::placeholder {
+    font-size: 1.2em;
+    color: #E6E8ED;
+    font-weight: 400;
 }
 
 p {
     color: #6E6E6E;
-    font-family: arial;
 }
 
 .buttonsContainer > button {
@@ -51,8 +62,30 @@ p {
 #checkIn {
     color: #53bd38;
     border: 0.1em solid #53bd38;
+    background-color: #f5f7fa;
 }
 
 #checkIn:hover {
     box-shadow: 2px 3px 7px #9ba9bb;
+}
+
+#list {
+    width: 350px;
+    margin-top: 2rem;
+    padding: 10px 30px;
+    background-color: white;
+    border: 1px solid #E6E8ED;
+    border-radius: 9px;
+}
+
+li {
+    color: #6E6E6E;
+    font-weight: 600;
+    line-height: 2;
+    border-bottom: 1px solid #E6E8ED;
+    list-style-position:inside;
+}
+
+li:last-child {
+    border-bottom: 0;
 }
